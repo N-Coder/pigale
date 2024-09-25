@@ -1,5 +1,8 @@
 TEMPLATE = app
 
+CONFIG += c++11
+QMAKE_CXXFLAGS += -std=c++11
+
 VERSION=$$cat(../version)
 INCLUDEPATH = ../incl
 SOURCES = main.cpp
