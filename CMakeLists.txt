@@ -61,6 +61,9 @@ add_library(tgraph STATIC
 )
 target_include_directories(tgraph PUBLIC incl)
 
-add_executable(usingtgraph UsingTgraph/main.cpp)
+add_executable(usingtgraph UsingTgraph/main.cpp
+)
+add_executable(run_timer UsingTgraph/run_timer.cpp
+)
 set_target_properties(usingtgraph PROPERTIES DEBUG_POSTFIX _debug)
 target_link_libraries(usingtgraph PUBLIC tgraph)
